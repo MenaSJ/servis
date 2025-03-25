@@ -3,6 +3,7 @@ header {
   background-color: var(--bg-white);
   margin: auto;
   position: fixed;
+  z-index: 10;
   top: 0;
   box-shadow: rgba(27, 31, 35, 0.04) 0px 3px 0px,
     rgba(255, 255, 255, 0.25) 0px 3px 0px inset;

@@ -1,4 +1,8 @@
 import "./Footer.css";
+import instagram from "/icons/instagram.png";
+import facebook from "/icons/facebook.png";
+import whatsapp from "/icons/whatsapp.png";
+import envelop from "/icons-svg/envelope-solid.svg";
 
 export default function Footer() {
   return (
@@ -59,8 +63,18 @@ export default function Footer() {
           <p className="copyri">&copy; 2025</p>
           <div className="footer-socials">
             <p>Siguenos:</p>
-            <button>X</button>
-            <button>X</button>
+            <button>
+              <img src={facebook} alt="" />
+            </button>
+            <button>
+              <img src={instagram} alt="" />
+            </button>
+            <button>
+              <img src={whatsapp} alt="" />
+            </button>
+            <button>
+              <img src={envelop} alt="" />
+            </button>
           </div>
         </div>
       </div>

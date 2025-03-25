@@ -2,8 +2,9 @@
   --text-black: black;
   --text-blue: #18a0fb;
   --text-white: #fff;
-  --bg-blue: #18a0fb;
+  --bg-blue: #51baff;
   --bg-white: #fff;
+  --bg-gray: rgb(241, 241, 241);
   --text-sm: 1rem;
   --text-md: 1.3;
   --text-title-1: 2.4rem;
@@ -24,4 +25,27 @@ body {
   background-color: rgb(241, 241, 241);
   margin: 0;
   padding: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(250px); /* Start 100px off-screen to the right */
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+svg {
+  width: 100%;
+  height: 100%;
+  background-color: red;
 }
