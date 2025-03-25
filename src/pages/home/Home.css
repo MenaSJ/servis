@@ -1,0 +1,24 @@
+main {
+  max-width: var(--max-width);
+  margin: 8rem auto;
+}
+.home-section1 {
+  height: 500px;
+  padding: 50px;
+  box-sizing: border-box;
+  color: var(--text-white);
+}
+
+.home-container-section1 {
+  height: 350px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("img/image-torniquete-1.JPG");
+  padding: 3rem;
+}
+.section1-half {
+  max-width: 50%;
+}
