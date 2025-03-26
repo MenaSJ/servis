@@ -5,18 +5,58 @@ import comment from "/icons-svg/comment-solid.svg";
 import mexico from "/icons/mexico.png";
 import Button from "../../components/common/button/Button";
 import Cuestionario from "../../components/forms/cuestionario/Cuestionario";
+import { useState } from "react";
+
+const AccordionData = [
+  {
+    id: 1,
+    title: "Titulo1",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae in tempora magni unde accusantium cum corporis. Maiores molestiae quis molestias voluptatem ipsum quo ratione ipsa, necessitatibus id enim exercitationem neque!",
+  },
+  {
+    id: 2,
+    title: "Titulo2",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae in tempora magni unde accusantium cum corporis. Maiores molestiae quis molestias voluptatem ipsum quo ratione ipsa, necessitatibus id enim exercitationem neque!",
+  },
+  {
+    id: 3,
+    title: "Titulo3",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae in tempora magni unde accusantium cum corporis. Maiores molestiae quis molestias voluptatem ipsum quo ratione ipsa, necessitatibus id enim exercitationem neque!",
+  },
+  {
+    id: 4,
+    title: "Titulo4",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae in tempora magni unde accusantium cum corporis. Maiores molestiae quis molestias voluptatem ipsum quo ratione ipsa, necessitatibus id enim exercitationem neque!",
+  },
+  {
+    id: 5,
+    title: "Titulo5",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae in tempora magni unde accusantium cum corporis. Maiores molestiae quis molestias voluptatem ipsum quo ratione ipsa, necessitatibus id enim exercitationem neque!",
+  },
+];
 
 export default function Home() {
+  const [accordion, setAccordion] = useState(AccordionData[0]);
   return (
     <main>
-      <Section1 />
-      <Section2 />
+      <HomeSection1 />
+      <HomeSection2 />
+      <HomeAcordion
+        AccordionData={AccordionData}
+        accordion={accordion}
+        setAccordion={setAccordion}
+      />
       <Cuestionario />
     </main>
   );
 }
 
-function Section1() {
+function HomeSection1() {
   return (
     <section className="home-section1">
       <div className="home-container-section1">
@@ -35,13 +75,13 @@ function Section1() {
   );
 }
 
-function Section2() {
+function HomeSection2() {
   return (
     <section className="section2">
       <div className="section2-half section2-icons">
         <div>
           <img src={headphones} alt="" />
-          <p className="grey">Asesoramiento en todo momento po expertos</p>
+          <p className="grey">Asesoramiento en todo momento por expertos</p>
         </div>
         <div>
           <p className="blue">
@@ -81,6 +121,31 @@ function Section2() {
           de problemas de luz a corto o largo plazo, nosotros nos encargamos de
           todo para que vivas tranquilo
         </p>
+      </div>
+    </section>
+  );
+}
+
+function HomeAcordion({ AccordionData, accordion, setAccordion }) {
+  return (
+    <section className="accordion-container">
+      <div className="accordion-top">
+        {AccordionData.map((data) => (
+          <button
+            className="accordion-btn"
+            key={data.id}
+            onClick={() => setAccordion(data)}
+          >
+            {data.title}
+          </button>
+        ))}
+      </div>
+      <div className="accordion-bottom">
+        <img src="img/image-torniquetes-2.jpg" alt="image" />
+        <div className="accordion-info">
+          <h2 className="accordion-title">{accordion.title}</h2>
+          <p className="accordion-text">{accordion.description}</p>
+        </div>
       </div>
     </section>
   );
