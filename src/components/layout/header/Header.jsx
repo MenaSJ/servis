@@ -28,11 +28,11 @@ export default function Header() {
                 Automatizacion Industrial
               </Link>
             </li>
-            <li className="nav-li">
+            {/* <li className="nav-li">
               <Link to="/contabilidad" className="nav-link">
                 Contabilidad
               </Link>
-            </li>
+            </li> */}
             <li to="/blog" className="nav-li">
               <Link to="/blog" className="nav-link">
                 Blog

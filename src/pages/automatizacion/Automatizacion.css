@@ -1,0 +1,7 @@
+.section-auto {
+  padding: 50px;
+}
+.section-auto-half {
+  display: flex;
+  gap: 50px;
+}
