@@ -14,18 +14,26 @@ export default function Header() {
               </Link>
             </li>
             <li className="nav-li">
-              <Link className="nav-link">Sistemas de acceso</Link>
+              <Link to="/sistemas" className="nav-link">
+                Sistemas de acceso
+              </Link>
             </li>
             <li className="nav-li">
-              <Link className="nav-link">Instalaciones electricas</Link>
+              <Link to="/instalaciones" className="nav-link">
+                Instalaciones electricas
+              </Link>
             </li>
             <li className="nav-li">
-              <Link className="nav-link">Automatizacion Industrial</Link>
+              <Link to="/automatizacion" className="nav-link">
+                Automatizacion Industrial
+              </Link>
             </li>
             <li className="nav-li">
-              <Link className="nav-link">Contabilidad</Link>
+              <Link to="/contabilidad" className="nav-link">
+                Contabilidad
+              </Link>
             </li>
-            <li className="nav-li">
+            <li to="/blog" className="nav-li">
               <Link to="/blog" className="nav-link">
                 Blog
               </Link>
