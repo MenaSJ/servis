@@ -35,6 +35,7 @@ header img {
   color: var(--text-black);
   height: 100%;
   padding: 1rem 1.5rem;
+  text-decoration: none;
 }
 .nav-link:hover {
   cursor: pointer;
