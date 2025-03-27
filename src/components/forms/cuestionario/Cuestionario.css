@@ -1,8 +1,6 @@
-
 .form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 100%;
+  padding: 0 50px;
   font-family: Arial, sans-serif;
 }
 
@@ -23,7 +21,8 @@
   font-weight: bold;
 }
 
-.form-input, .form-textarea {
+.form-input,
+.form-textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
@@ -54,4 +53,11 @@
 
 .submit-button:hover {
   background-color: #0056b3;
+}
+.form-top {
+  display: flex;
+  gap: 50px;
+}
+.form-half {
+  width: 50%;
 }

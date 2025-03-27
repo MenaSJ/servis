@@ -29,14 +29,13 @@ header img {
   flex-direction: row;
   align-items: center;
 }
-.nav-li {
-}
 .nav-link {
   width: 100%;
   text-align: center;
   color: var(--text-black);
   height: 100%;
   padding: 1rem 1.5rem;
+  text-decoration: none;
 }
 .nav-link:hover {
   cursor: pointer;

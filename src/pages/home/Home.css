@@ -2,6 +2,7 @@ main {
   max-width: var(--max-width);
   margin: 8rem auto 2.5rem;
   background-color: var(--bg-white);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .home-section1 {
   box-sizing: border-box;
@@ -18,7 +19,7 @@ main {
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url("img/image-torniquete-1.JPG");
+    url("img/image-torniquete-1.jpg");
   padding: 3rem;
 }
 .section1-half {
@@ -30,8 +31,7 @@ main {
   padding: 50px;
   display: flex;
 }
-
-.section2-half {
+.section-half {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -63,6 +63,7 @@ main {
 }
 .accordion-container {
   padding: 50px;
+  background-color: var(--bg-blue-light);
 }
 .accordion-top {
   height: 150px;
@@ -102,8 +103,65 @@ main {
   border-radius: 15px;
   cursor: pointer;
   transition: var(--transition-2);
+  background-color: var(--bg-blue);
+  color: var(--text-white);
+  font-weight: var(--bold-lg);
+}
+.accordion-title {
+  font-size: var(--title-2);
+  font-weight: var(--bold-md);
 }
 .accordion-top button:hover {
   transform: var(--translate-1);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.title3 {
+  font-size: var(--title-3);
+}
+.title2 {
+  font-size: var(--title-2);
+}
+.section {
+  display: flex;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.section-title {
+  text-align: center;
+}
+.section-column {
+  flex-direction: column;
+}
+.bold-md {
+  font-weight: var(--bold-md);
+}
+.section-img {
+  display: flex;
+  gap: 5%;
+  column-gap: 5%;
+  justify-content: center;
+  align-content: space-around;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.section-img-3 {
+  width: 250px;
+}
+.section-blue {
+  background-color: var(--bg-blue-light);
+}
+.section-row-img img {
+  width: 40px;
+  height: 40px;
+}
+.section-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 3rem;
+}
+.section-top {
+  align-items: start;
 }
