@@ -1,5 +1,7 @@
 // pages/blog/Blog.jsx
+import "./Blog.css";
 import { useState } from 'react';
+
 
 const blogPosts = [
   {
