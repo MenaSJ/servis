@@ -1,6 +1,5 @@
-// pages/blog/Blog.jsx
-import { useState } from "react";
 import "./Blog.css";
+import { useState } from "react";
 
 const blogPosts = [
   {
