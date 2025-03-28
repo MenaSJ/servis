@@ -1,21 +1,24 @@
 // pages/blog/Blog.jsx
-import { useState } from 'react';
+import { useState } from "react";
+import "./Blog.css";
 
 const blogPosts = [
   {
     id: 1,
     title: "Mantenimiento de torniquetes de acceso",
-    image: "https://via.placeholder.com/300x200",
+    image: "img/image-toniuete-1.jpg",
     excerpt: "Cada qué tiempo mi torniquete de acceso necesita mantenimiento",
-    content: "El mantenimiento de los torniquetes de acceso debe realizarse cada 6 meses para garantizar su correcto funcionamiento. Esto incluye lubricación de partes móviles, verificación de sensores y prueba de los mecanismos de seguridad."
+    content:
+      "El mantenimiento de los torniquetes de acceso debe realizarse cada 6 meses para garantizar su correcto funcionamiento. Esto incluye lubricación de partes móviles, verificación de sensores y prueba de los mecanismos de seguridad.",
   },
   {
     id: 2,
     title: "Otro artículo de ejemplo",
-    image: "https://via.placeholder.com/300x200",
+    image: "img/image-toniuete-2.jpg",
     excerpt: "Este es un resumen de otro artículo interesante",
-    content: "Contenido completo del otro artículo interesante que tiene mucha más información relevante para los lectores."
-  }
+    content:
+      "Contenido completo del otro artículo interesante que tiene mucha más información relevante para los lectores.",
+  },
   // Puedes agregar más artículos aquí
 ];
 
@@ -32,15 +35,15 @@ export default function Blog() {
       <div className="blog-grid">
         {blogPosts.map((post) => (
           <div key={post.id} className="blog-card">
-            <div 
-              className="blog-card-header" 
+            <div
+              className="blog-card-header"
               onClick={() => togglePost(post.id)}
             >
               <img src={post.image} alt={post.title} />
               <h3>{post.title}</h3>
               <p>{post.excerpt}</p>
             </div>
-            
+
             {expandedPost === post.id && (
               <div className="blog-card-content">
                 <p>{post.content}</p>
