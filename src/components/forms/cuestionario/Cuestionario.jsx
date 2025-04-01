@@ -3,7 +3,7 @@ import "./Cuestionario.css";
 export default function Cuestionario() {
   return (
     <div className="form section-half">
-      <form action="">
+      <form action="submit">
         <h1>Dejanos tus datos y te contactaremos en un mínimo de 24 horas</h1>
         <div className="form-top">
           <div className="form-group form-half">

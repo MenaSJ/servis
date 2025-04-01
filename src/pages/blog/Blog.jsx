@@ -18,7 +18,6 @@ const blogPosts = [
     content:
       "Contenido completo del otro artículo interesante que tiene mucha más información relevante para los lectores.",
   },
-  // Puedes agregar más artículos aquí
 ];
 
 export default function Blog() {

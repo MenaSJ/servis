@@ -54,7 +54,7 @@ const Instalaciones = () => {
     <main className="instalaciones-container">
       <section className="hero-section">
         <div className="hero-content">
-          <h2 className="title3">Automatizacion Industrial</h2>
+          <h2 className="title3">Instalaciones Electricas</h2>
           <Button text={"Solicitar Asesoria"} />
         </div>
       </section>
