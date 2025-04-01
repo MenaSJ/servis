@@ -1,31 +1,32 @@
-/* Estilos generales */
-.instalaciones-container {
-  font-family: 'Arial', sans-serif;
-  color: #333;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+.instalaciones-container section {
+  padding: 50px;
 }
 
 /* Hero section */
-.hero-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-              url('https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+.hero-content {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
   background-size: cover;
   background-position: center;
-  height: 400px;
+  height: 350px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 50px;
-  border-radius: 8px;
-  position: relative;
+  justify-content: end;
+  padding: 3rem;
+  animation: fadeIn 1s ease-in-out;
+  color: var(--text-white);
 }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
+.hero-content button {
+  animation: slideInRight 1s ease-in-out;
+}
+.hero-content h2 {
+  animation: slideInRight 1s ease-in-out;
 }
 
 /* Botón CTA principal */
@@ -83,7 +84,6 @@
 }
 
 .service-icon-container {
-  background-color: #f8c537;
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -95,6 +95,7 @@
 
 .service-icon {
   color: #2c3e50;
+  background-color: white;
   font-size: 2rem;
 }
 
@@ -107,14 +108,14 @@
 }
 
 .service-card h3::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 50px;
   height: 2px;
-  background-color: #f8c537;
+  /* background-color: #f8c537; */
 }
 
 .service-card p {
@@ -125,8 +126,8 @@
 
 /* Botón secundario */
 .learn-more-btn {
-  background-color: #f8c537;
-  color: #2c3e50;
+  background-color: var(--bg-blue);
+  color: var(--text-white);
   border: none;
   padding: 10px 20px;
   font-size: 1rem;
@@ -138,7 +139,7 @@
 }
 
 .learn-more-btn:hover {
-  background-color: #e6b332;
+  /* background-color: #e6b332; */
 }
 
 /* Responsive */
@@ -146,12 +147,12 @@
   .hero-section {
     height: 300px;
   }
-  
+
   .cta-button {
     padding: 12px 25px;
     font-size: 1rem;
   }
-  
+
   .services-grid {
     grid-template-columns: 1fr;
   }
@@ -171,14 +172,14 @@
 }
 
 .expert-section h2::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 100px;
   height: 3px;
-  background-color: #f8c537;
+  /* background-color: #f8c537; */
 }
 
 .expert-intro {
@@ -218,14 +219,14 @@
 }
 
 .expert-service h3::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 40px;
   height: 2px;
-  background-color: #f8c537;
+  /* background-color: #f8c537; */
 }
 
 .expert-service p {
@@ -237,7 +238,7 @@
   .expert-section h2 {
     font-size: 1.8rem;
   }
-  
+
   .expert-intro {
     font-size: 1rem;
   }
@@ -325,7 +326,7 @@
   .projects-section {
     padding: 40px 0;
   }
-  
+
   .projects-grid {
     grid-template-columns: 1fr;
   }

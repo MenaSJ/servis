@@ -5,7 +5,7 @@ const blogPosts = [
   {
     id: 1,
     title: "Mantenimiento de torniquetes de acceso",
-    image: "img/image-toniuete-1.jpg",
+    image: "img/blog1.png",
     excerpt: "Cada qué tiempo mi torniquete de acceso necesita mantenimiento",
     content:
       "El mantenimiento de los torniquetes de acceso debe realizarse cada 6 meses para garantizar su correcto funcionamiento. Esto incluye lubricación de partes móviles, verificación de sensores y prueba de los mecanismos de seguridad.",
@@ -13,7 +13,7 @@ const blogPosts = [
   {
     id: 2,
     title: "Otro artículo de ejemplo",
-    image: "img/image-toniuete-2.jpg",
+    image: "img/blog2.png",
     excerpt: "Este es un resumen de otro artículo interesante",
     content:
       "Contenido completo del otro artículo interesante que tiene mucha más información relevante para los lectores.",

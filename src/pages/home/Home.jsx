@@ -54,7 +54,7 @@ export default function Home() {
           </div>
         </div>
         <div className="section-half">
-          <h2>
+          <h2 className="bold-md">
             SERVIS COEIN, tu aliado con mas de una solucion para tu empresa y
             hogar
           </h2>
@@ -81,15 +81,14 @@ export default function Home() {
         accordion={accordion}
         setAccordion={setAccordion}
       />
-      <section className="section">
+      <section style={{ gap: "20px" }} className="section">
         <div className="section-half">
-          <h2 className="title3">Este es un titulo</h2>
+          <h2 className="title2 bold-md">Esta es tu oportunidad</h2>
           <div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
-              dolore natus totam voluptate porro esse, officia, quas eum sint
-              deserunt eius, sapiente aliquid nostrum numquam ut earum quo
-              beatae quibusdam.
+              Sabías que las empresas que cuentan con un sistema de acceso como
+              los torniquetes evitan el robo de entradas a sus baños públicos,
+              lo que genera mayores ingresos y tienen más control de su negocio
             </p>
             <Button text={"Informacion"} />
           </div>
@@ -107,22 +106,16 @@ export default function Home() {
           <h2 className="title2 bold-md">Estas en buenas manos</h2>
           <h3 className="title3 bold-md">Algunos de nuestros proyectos</h3>
         </div>
-        <section className="section-img">
-          <img
-            className="section-img-3"
-            src="img/image-torniquete-1.jpg"
-            alt=""
-          />
-          <img
-            className="section-img-3"
-            src="img/image-torniquete-1.jpg"
-            alt=""
-          />
-          <img
-            className="section-img-3"
-            src="img/image-torniquete-1.jpg"
-            alt=""
-          />
+        <section className="process-grid">
+          <div className="process-card">
+            <img className="section-img-3" src="img/home1.png" alt="" />
+          </div>
+          <div className="process-card">
+            <img className="section-img-3" src="img/home2.png" alt="" />
+          </div>
+          <div className="process-card">
+            <img className="section-img-3" src="img/home3.png" alt="" />
+          </div>
         </section>
       </section>
       <section className="section section-top">
