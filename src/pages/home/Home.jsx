@@ -12,7 +12,6 @@ import { useState } from "react";
 import AccordionData from "../../data/AccordionData";
 
 export default function Home() {
-  console.log(AccordionData);
   const [accordion, setAccordion] = useState(AccordionData[0]);
   return (
     <main>

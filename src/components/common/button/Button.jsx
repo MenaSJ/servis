@@ -1,5 +1,9 @@
 import "./Button.css";
 
 export default function Button({ link, text }) {
-  return <button className="btn">{text}</button>;
+  return (
+    <button onClick={() => (window.location.href = link)} className="btn">
+      {text}
+    </button>
+  );
 }

@@ -10,21 +10,21 @@ const Instalaciones = () => {
       title: "Instalaciones eléctricas completas",
       description:
         "Nemo enim ipsam voluptatem quia voluptas sit superintax qui odi aut fugit, sed quid imperduntur magni doloresios qui intonar voluptatem.",
-      cta: "Learn more",
+      cta: "Más información",
       icon: <FaBolt className="service-icon" />,
     },
     {
       title: "Mantenimiento",
       description:
         "Amet, consectetur adipiscing elit, sed do eiusmod temps inindiquant ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.",
-      cta: "Learn more",
+      cta: "Más información",
       icon: <FaTools className="service-icon" />,
     },
     {
       title: "Remodelación de instalación eléctrica",
       description:
         "Consequinum magni doloresios qui intonar voluptatem aqui metatur. Nouse porno obliguam est, qui odiorem ipsum quia dolor.",
-      cta: "Learn more",
+      cta: "Más información",
       icon: <FaHome className="service-icon" />,
     },
   ];
